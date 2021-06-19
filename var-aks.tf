@@ -14,19 +14,19 @@ variable "azure_region" {
 #  Resource Group Name
 variable "resource_group" {
   type    = string
-  default = "AKS-COE-Cluster-RG"
+  default = "AKS-Cluster-RG"
 }
 
 # AKS Cluster name
 variable "cluster_name" {
   type    = string
-  default = "AKS-COE"
+  default = "AKS"
 }
 
 #AKS DNS name
 variable "dns_name" {
   type    = string
-  default = "AKS-COE"
+  default = "AKS"
 }
 
 variable "admin_username" {
