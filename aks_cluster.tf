@@ -1,9 +1,9 @@
-resource "azurerm_resource_group" "aks_coe_rg" {
+resource "azurerm_resource_group" "aks_rg" {
   name     = var.resource_group
   location = var.azure_region
 }
 
-resource "azurerm_kubernetes_cluster" "aks_coe" {
+resource "azurerm_kubernetes_cluster" "aks" {
   name                = var.cluster_name
   location            = azurerm_resource_group.aks_demo_rg.location
   resource_group_name = azurerm_resource_group.aks_demo_rg.name
