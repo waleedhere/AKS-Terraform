@@ -25,7 +25,7 @@ stages:
         workingDirectory: 1-terraform
         backendType: azurerm
         backendServiceArm: 'Azure SPN'
-        backendAzureRmResourceGroupName: 'AKS-COE-Cluster-RG'
+        backendAzureRmResourceGroupName: 'AKS-Cluster-RG'
         backendAzureRmStorageAccountName: 'nyuenterraformstate'
         backendAzureRmContainerName: 'tfstate'
         backendAzureRmKey: 'demo.terraform.tfstate'
@@ -58,7 +58,7 @@ stages:
               workingDirectory: $(Pipeline.Workspace)/terraform_out
               backendType: azurerm
               backendServiceArm: 'Azure SPN'
-              backendAzureRmResourceGroupName: 'AKS-COE-Cluster-RG'
+              backendAzureRmResourceGroupName: 'AKS-Cluster-RG'
               backendAzureRmStorageAccountName: 'nyuenterraformstate'
               backendAzureRmContainerName: 'tfstate'
               backendAzureRmKey: 'demo.terraform.tfstate'
